@@ -1,4 +1,101 @@
 @import config
 
-// @media only screen  and (max-width : 600px)
+@media only screen  and (max-width : 600px)
+	html
+		font-size: calc(100vw/600*8)
+	.logo
+		width: 100%
+		justify-content: center
+		&__text span
+			display: inline-block
+			margin: 1.5rem
+			padding-left: 1.5rem
+			position: relative
+			&::before
+				content: '|'
+				position: absolute
+				left: 0
 
+	.info-line
+		flex-direction: column
+		gap: 3rem
+		align-items: center
+		&__wrap
+			align-items: start
+			align-self: start
+			gap: 3rem
+		&__item
+			line-height: 1.8
+			&::before
+				top: -3px
+
+	.nav
+		padding: 2.5rem
+		max-width: 100%
+		flex-wrap: wrap
+		gap: .75rem
+		&__item
+			padding: 1.5rem 2.5rem
+			font-size: 2.2rem
+			background-color: rgba(#fff, .1)
+
+	.header
+		&__wrap
+			padding: 0 2.5rem
+			background-size: 115rem
+			background-position: 14% 100%
+		&__content
+			padding-top: 4rem
+			padding-bottom: 7.5rem
+			max-width: 100%
+			height: auto
+		&__title
+			font-size: 6.8rem
+
+	.section
+		max-width: 100%
+		padding: 7.5rem 2.5rem
+		&__list
+			width: 75%
+			padding: 2.5rem 2.5rem 2.5rem 4rem
+		&__item
+			flex-basis: 100%
+			font-size: 2.4rem
+		&__content
+			flex-wrap: wrap
+			gap: 5rem
+		&-tab
+			width: 39rem
+			height: 52rem
+			&__img
+				height: 65%
+			&_product
+				width: 30rem
+				& .section-tab__img
+					height: 80%
+					margin-bottom: 2.5rem
+
+	.discount
+		max-width: 100%
+		padding: 7.5rem 2.5rem
+		&::after
+			display: none
+		&__title
+			text-align: center
+			span
+				font-size: .65em
+		&__list
+			padding-left: 5rem
+			max-width: 100%
+			gap: 3rem
+		&__item
+			margin: 0
+			flex-basis: 100%
+			font-size: 2.6rem
+	.section-slider
+		width: 100%
+
+	.content
+		max-width: 100%
+		padding: 4rem 0
+		justify-content: center

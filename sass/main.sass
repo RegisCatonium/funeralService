@@ -7,6 +7,8 @@
 	background-color: $bgColor-2
 
 .header
+	position: relative
+	border-bottom: .4rem solid rgba(#fff, .25)
 	&__top-line
 		width: 100%
 		position: relative
@@ -23,7 +25,7 @@
 	&__wrap
 		width: 100%
 		background-image: url(../images/bg-header.jpg)
-		background-size: contain
+		background-size: cover
 		background-repeat: no-repeat
 	&__content
 		max-width: 160rem
@@ -56,7 +58,6 @@
 	&__text + &__text
 		margin-top: 2.5rem
 
-
 .info-line
 	display: flex
 	justify-content: space-between
@@ -86,7 +87,6 @@
 			content: '\e942'
 		&_mail::before
 			content: '\e945'
-			
 		& a
 			display: block
 			color: rgba(#fff, .9)
@@ -178,9 +178,9 @@
 		&:nth-child(2)::before
 			content: "\e901"
 		&:nth-child(3)::before
-			content: "\e902"
+			content: "\e905"
 		&:nth-child(4)::before
-			content: "\e900"
+			content: "\e903"
 		&:nth-child(5)
 			flex-basis: 85%
 			margin-bottom: 0
@@ -224,7 +224,7 @@
 			display: block
 			width: 17.5rem
 			height: 29.5rem
-			background-image: url(../images/bg-service.png)
+			background-image: url(../images/bg-service-1.png)
 			background-size: contain
 			background-repeat: no-repeat
 			position: absolute
@@ -331,9 +331,14 @@
 	min-height: 100vh
 	margin: 0 auto
 	padding: 9rem 0
+	&_h80
+		& .content__item
+			padding: 3rem 2rem
+			height: 80rem
 	&__item
 		width: 50rem
-		height: 50rem
+		height: 60rem
+		padding: 2rem
 		border: 1rem ridge $accent
 		border-radius: 2.5rem
 		transition: transform .2s ease-in
@@ -344,4 +349,4 @@
 		width: 100%
 		height: 100%
 		object-fit: contain
-// @import media
+@import media
