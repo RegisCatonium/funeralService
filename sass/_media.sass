@@ -21,14 +21,18 @@
 		gap: 3rem
 		align-items: center
 		&__wrap
+			flex-wrap: wrap
 			align-items: start
 			align-self: start
-			gap: 3rem
+			justify-content: center
+			gap: 2rem
 		&__item
+			padding-left: 3.7rem
 			line-height: 1.8
 			&::before
-				top: -3px
-
+				top: -5px
+			&_clock
+				order: 4
 	.nav
 		padding: 2.5rem
 		max-width: 100%

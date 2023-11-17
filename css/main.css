@@ -523,15 +523,21 @@ p {
     align-items: center;
   }
   .info-line__wrap {
+    flex-wrap: wrap;
     align-items: start;
     align-self: start;
-    gap: 3rem;
+    justify-content: center;
+    gap: 2rem;
   }
   .info-line__item {
+    padding-left: 3.7rem;
     line-height: 1.8;
   }
   .info-line__item::before {
-    top: -3px;
+    top: -5px;
+  }
+  .info-line__item_clock {
+    order: 4;
   }
   .nav {
     padding: 2.5rem;
