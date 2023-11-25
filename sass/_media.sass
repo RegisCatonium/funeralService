@@ -103,3 +103,32 @@
 		max-width: 100%
 		padding: 4rem 0
 		justify-content: center
+
+	.section-price
+		&__item
+			flex-wrap: wrap
+			padding: 3rem
+		&__title
+			flex-basis: 40%
+			font-size: 3.2rem
+			padding-right: 1.5rem
+			order: 1
+		&__text
+			flex-basis: 100%
+			padding: 2rem 0 0
+			order: 3
+			text-align: justify
+			&::after
+				display: none
+		&__cost
+			flex-basis: 40%
+			text-align: right
+			font-size: 3.2rem
+			order: 2
+			& span
+				padding-left: 0
+				font-size: 1.1em
+				&::before
+					display: none
+
+				
